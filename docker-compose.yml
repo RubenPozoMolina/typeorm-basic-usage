@@ -1,0 +1,10 @@
+  db:
+    image: mysql:5.7
+    restart: always
+    environment:
+      MYSQL_DATABASE: 'type-graphql'
+      MYSQL_ROOT_PASSWORD: 'qwerty123'
+    ports:
+      - '3306:3306'
+    expose:
+      - '3306'

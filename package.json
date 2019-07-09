@@ -1,0 +1,46 @@
+{
+  "name": "typeorm-basic-usage",
+  "version": "1.0.0",
+  "description": "TypeGraphQL basic usage example complete project",
+  "main": "index.ts",
+  "scripts": {
+    "start": "npm run build:live",
+    "build": "tsc -p .",
+    "build:live": "nodemon --watch '**/*.ts' --exec 'ts-node' index.ts",
+    "test": "jest --verbose --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RubenPozoMolina/typeorm-basic-usage.git"
+  },
+  "keywords": [
+    "TypeGraphQL",
+    "example",
+    "typeorm",
+    "graphql",
+    "mysql"
+  ],
+  "author": "Rubén Pozo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RubenPozoMolina/typeorm-basic-usage/issues"
+  },
+  "homepage": "https://github.com/RubenPozoMolina/typeorm-basic-usage#readme",
+  "dependencies": {
+    "@types/graphql": "^14.2.2",
+    "@types/node": "^12.6.1",
+    "apollo-server": "^2.6.7",
+    "graphql": "^14.4.2",
+    "mysql": "^2.17.1",
+    "reflect-metadata": "^0.1.13",
+    "type-graphql": "^0.17.4",
+    "typedi": "^0.8.0",
+    "typeorm": "^0.2.18",
+    "typeorm-typedi-extensions": "^0.2.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.5.3"
+  }
+}
