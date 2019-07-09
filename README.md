@@ -7,5 +7,27 @@ Complete project example from TypeGraphQL typeorm-basic-usage example:
 
 ``` bash
 docker-compose up -d
-npm run start
+npm start
+```
+
+To test the propper behaviour you can use this query:
+
+```gql
+query {
+  recipe( recipeId: 1 ) {
+    id,
+    title,
+    description,
+    ratings {
+      user{
+        nickname
+      }
+      date,
+      value
+    }
+    author {
+      nickname
+    }
+  }
+}
 ```
