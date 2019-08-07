@@ -5,8 +5,9 @@ Complete project example from TypeGraphQL typeorm-basic-usage example:
 
 ## Running required steps
 
-``` bash
+```bash
 docker-compose up -d
+npm install
 npm start
 ```
 
@@ -14,15 +15,15 @@ To test the propper behaviour you can use this query:
 
 ```gql
 query {
-  recipe( recipeId: 1 ) {
-    id,
-    title,
-    description,
+  recipe(recipeId: 1) {
+    id
+    title
+    description
     ratings {
-      user{
+      user {
         nickname
       }
-      date,
+      date
       value
     }
     author {
